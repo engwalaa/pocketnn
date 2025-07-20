@@ -31,7 +31,9 @@ pktmat3d& pktnn::pktfc::getOutputForConv() {
 pktmat& pktnn::pktfc::getWeight() {
     return mWeight;
 }
-
+pktmat& pktnn::pktfc::getBias() { 
+    return mBias;
+}
 pktmat& pktnn::pktfc::getDeltasTranspose() {
     return mDeltasTranspose;
 }
