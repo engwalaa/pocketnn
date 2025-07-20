@@ -27,6 +27,8 @@ namespace pktnn {
         pktmat mActvGradInv;
         pktmat mWeightUpdate;
         pktmat mBiasUpdate;
+        pktmat mWeight;
+        pktmat mBias;
 
         // batch normalization
         bool mUseBn = false;
@@ -64,6 +66,7 @@ namespace pktnn {
         pktmat& getOutputForFc();
         pktmat3d& getOutputForConv();
         pktmat& getWeight();
+        pktmat& getBias();
         pktmat& getDeltasTranspose();
 
         // setters
